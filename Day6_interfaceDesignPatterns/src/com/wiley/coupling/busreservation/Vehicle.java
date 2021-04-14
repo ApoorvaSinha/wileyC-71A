@@ -2,7 +2,7 @@ package com.wiley.coupling.busreservation;
 
 public interface Vehicle {
 
-	private  void  put() {System.out.println("Private Function in Interfacess");}
+	default  void  put() {System.out.println("Private Function in Interfacess");}
 	public  default void get()  // defining a method
 	{
 		put();
@@ -10,5 +10,5 @@ public interface Vehicle {
 	}
 	public void move(); //declaration
 	
-	private static void func1() {System.out.println("i am static");}
+	static void func1() {System.out.println("i am static");}
 }

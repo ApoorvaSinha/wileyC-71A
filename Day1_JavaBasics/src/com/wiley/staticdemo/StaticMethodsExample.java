@@ -13,18 +13,18 @@ public class StaticMethodsExample {
         
         // The static variable can be accessed from an object instance.
         Methods d = new Methods();
-        System.out.println("d.a = " + d.a);
+        System.out.println("d.a = " + Methods.a);
         
         // The static method can be invoked from an object instance.
-        d.staticMethod(0);
+        Methods.staticMethod(0);
         
         // The same static variable can be accessed from multiple instances.
         Methods e = new Methods();
-        System.out.println("e.a = " + e.a);
-        d.a += 3;
+        System.out.println("e.a = " + Methods.a);
+        Methods.a += 3;
         System.out.println("Methods.a = " + Methods.a);
-        System.out.println("d.a = " + d.a);
-        System.out.println("e.a = " + e.a);
+        System.out.println("d.a = " + Methods.a);
+        System.out.println("e.a = " + Methods.a);
         
         // Compile error 
         // Methods.myNonStaticMethod(3);

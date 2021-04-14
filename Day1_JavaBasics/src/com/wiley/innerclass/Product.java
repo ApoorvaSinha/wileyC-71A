@@ -15,6 +15,7 @@ an existing application getter/setter ,initialization
 class Electronics extends Product
 {
 
+	@Override
 	public void calc_sale_price() {
 	
 	}

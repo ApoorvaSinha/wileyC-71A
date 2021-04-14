@@ -1,5 +1,4 @@
 package com.wiley.staticdemo;
-import com.wiley.staticdemo.*;
 public class Methods {
    
     /** Creates a new instance of Methods */

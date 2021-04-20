@@ -16,7 +16,7 @@ public class DBConnect {
 		
 		try 
 		{
-			 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/hr", "root", "Apoorva@123");
+			 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/hr", "root", "Mysql@123");
 			 stat=con.createStatement();
 			 int id=50,id1=30;
 			 res=stat.executeQuery("select employee_id,first_name,"

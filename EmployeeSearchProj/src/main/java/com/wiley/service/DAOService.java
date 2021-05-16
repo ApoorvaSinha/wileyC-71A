@@ -18,7 +18,7 @@ public class DAOService {
 	{
 		try {
 			
-			pre=con.prepareStatement("select * from emps where employee_id=?");
+			pre=con.prepareStatement("select * from employees where employee_id=?");
 			pre.setInt(1, id);
 			
 			res=pre.executeQuery();

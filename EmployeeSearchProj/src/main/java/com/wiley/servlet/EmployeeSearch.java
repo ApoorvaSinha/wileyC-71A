@@ -19,7 +19,7 @@ public class EmployeeSearch extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-	String form="<form method=get action='http://localhost:90/EmployeeSearchProj/SearchEmp'>"
+	String form="<form method=get action='http://localhost:8082/EmployeeSearchProj/SearchEmp'>"
 			+ "	Enter Employee Id<input type=text name='eid'><br>\r\n"
 			+ "	<input type=submit value='Search Employee'><input type=reset value='Reset'>\r\n"
 			+ "</form>";
@@ -36,7 +36,7 @@ public class EmployeeSearch extends HttpServlet {
 		PrintWriter pw=response.getWriter();
 		String name=request.getParameter("lid");
 		pw.println("Welcome "+name+" !");
-		pw.println("<form method=get action=\"http://localhost:90/EmployeeSearchProj/SearchEmp\">");
+		pw.println("<form method=get action=\"http://localhost:8082/EmployeeSearchProj/SearchEmp\">");
 		pw.println("Enter Employee Id<input type=text name='eid'><br>");
 		pw.println("<input type=submit value=\"Search Employee\"><input type=reset value='Reset'></form>");
 		

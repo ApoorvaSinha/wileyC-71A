@@ -9,7 +9,7 @@ public class Employee  implements Serializable
 	private String name;
 	private double salary;
 	private String desc;
-	private  String nickName;
+	private transient String nickName;
 	public Employee(int id, String name, double salary, String desc,String nickName) {
 		super();
 		this.id = id;

@@ -109,7 +109,7 @@ public class BinarySearchTreeDemo {
 			else if (root2.right == null)
 				return root2.left;
 
-			root.id = minVal(root.right);
+			//root.id = minVal(root.right);
 			root.right = removeRec(root.right, root.id);
 
 			EmployeeNode minNode = inorderSuccessor(root2.right);

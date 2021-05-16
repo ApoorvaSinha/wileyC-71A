@@ -1,10 +1,12 @@
-package com.wiley.collectionstream;
+package src.com.wiley.collectionstream;
 
 import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
+import com.wiley.collectionstream.Employee;
 
 public class EmployeeCollection {
 

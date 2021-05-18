@@ -31,14 +31,18 @@ public class EmployeeSearch extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter pw=response.getWriter();
 		String name=request.getParameter("lid");
 		pw.println("Welcome "+name+" !");
+<<<<<<< HEAD
 		pw.println("<form method=get action=\"http://localhost:8082/EmployeeSearchProj/SearchEmp\">");
+=======
+		pw.println("<form method=get action=\"http://localhost:90/EmployeeSearchProj/crudEmp\">");
+>>>>>>> branch 'main' of https://github.com/ratnappatel/wileyC-71A.git
 		pw.println("Enter Employee Id<input type=text name='eid'><br>");
-		pw.println("<input type=submit value=\"Search Employee\"><input type=reset value='Reset'></form>");
+		pw.println("<input type=submit value=\"Delete Employee\"><input type=reset value='Reset'></form>");
 		
 	}
 
